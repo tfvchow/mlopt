@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 # Read README.rst file
@@ -15,9 +15,7 @@ setup(name='mlopt',
       author='Bartolomeo Stellato, Dimitris Bertsimas',
       author_email='bartolomeo.stellato@gmail.com',
       url='https://mlopt.org/',
-      packages=['mlopt',
-                'mlopt.learners',
-                'mlopt.tests'],
+      packages=find_packages(),
       install_requires=["cvxpy",
                         "optuna",
                         "numpy",
