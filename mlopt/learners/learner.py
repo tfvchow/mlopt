@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 import numpy as np
 import optuna
-import mlopt.settings as stg
+from mlopt import settings as stg
 
 
 class Learner(ABC):

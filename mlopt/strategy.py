@@ -1,8 +1,8 @@
 from joblib import Parallel, delayed
 import numpy as np
-import mlopt.settings as stg
-import mlopt.error as e
-import mlopt.utils as u
+from mlopt import settings as stg
+from mlopt import error as e
+from mlopt import utils as u
 import cvxpy.settings as cps
 import scipy.sparse as spa
 from time import time

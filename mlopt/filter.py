@@ -1,7 +1,7 @@
 from joblib import Parallel, delayed
-import mlopt.settings as stg
+from mlopt import settings as stg
 import numpy as np
-import mlopt.utils as u
+from mlopt import utils as u
 from tqdm.auto import tqdm
 
 

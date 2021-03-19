@@ -3,8 +3,8 @@ import numpy as np
 from scipy.special import gammainc
 import pandas as pd
 from mlopt.strategy import encode_strategies
-import mlopt.settings as stg
-import mlopt.utils as u
+from mlopt import settings as stg
+from mlopt import utils as u
 from tqdm import tqdm
 
 

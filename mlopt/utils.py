@@ -2,7 +2,7 @@ import numpy as np
 import cvxpy as cp
 import os
 import pandas as pd
-import mlopt.settings as stg
+from mlopt import settings as stg
 import joblib
 
 

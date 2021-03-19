@@ -1,8 +1,8 @@
 import optuna
 from mlopt.learners.learner import Learner
-import mlopt.learners.xgboost.settings as xgbs
-import mlopt.settings as stg
-import mlopt.error as e
+from mlopt.learners.xgboost import settings as xgbs
+from mlopt import settings as stg
+from mlopt import error as e
 import time
 import copy
 

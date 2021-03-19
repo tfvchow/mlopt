@@ -1,8 +1,8 @@
 from mlopt.learners.learner import Learner
-import mlopt.learners.optimal_tree.settings as octstg
-import mlopt.settings as stg
+from mlopt.learners.optimal_tree import settings as octstg
+from mlopt import settings as stg
 from mlopt.utils import pandas2array, get_n_processes
-import mlopt.error as e
+from mlopt import error as e
 import shutil
 from subprocess import call
 import time

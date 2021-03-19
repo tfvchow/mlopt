@@ -1,13 +1,13 @@
 import pandas as pd
 from mlopt.problem import Problem
-import mlopt.settings as stg
+from mlopt import settings as stg
 from mlopt.learners import LEARNER_MAP, installed_learners
 from mlopt.sampling import Sampler
 from mlopt.strategy import encode_strategies
 from mlopt.filter import Filter
-import mlopt.error as e
+from mlopt import error as e
 from mlopt.utils import n_features, accuracy, suboptimality
-import mlopt.utils as u
+from mlopt import utils as u
 from mlopt.kkt import create_kkt_matrix, factorize_kkt_matrix
 from mlopt.utils import pandas2array
 from cvxpy import Minimize, Maximize

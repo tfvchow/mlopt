@@ -1,10 +1,10 @@
-import mlopt.settings as stg
-import mlopt.learners.pytorch.settings as pts
+from mlopt import settings as stg
+from mlopt.learners.pytorch import settings as pts
 from optuna.integration import PyTorchLightningPruningCallback
 from pytorch_lightning import Trainer
 from mlopt.learners.pytorch.lightning import LightningNet
 from pytorch_lightning import Callback
-import mlopt.error as e
+from mlopt import error as e
 from mlopt.learners.learner import Learner
 from sklearn.model_selection import train_test_split
 import optuna

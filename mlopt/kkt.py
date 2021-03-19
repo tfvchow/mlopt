@@ -15,7 +15,7 @@ from scipy.sparse.linalg import factorized
 from scikits.umfpack import UmfpackWarning
 import time
 import warnings
-import mlopt.settings as stg
+from mlopt import settings as stg
 
 KKT = "KKT"
 

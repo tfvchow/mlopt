@@ -1,5 +1,5 @@
 import numpy as np
-import mlopt.settings as stg
+from mlopt import settings as stg
 
 
 def accuracy(outputs, labels):

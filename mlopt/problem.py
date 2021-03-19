@@ -2,10 +2,10 @@ from joblib import Parallel, delayed
 import numpy as np
 # Mlopt stuff
 from mlopt.strategy import Strategy
-import mlopt.settings as stg
+from mlopt import settings as stg
 from mlopt.kkt import KKTSolver
-import mlopt.utils as u
-import mlopt.error as e
+from mlopt import utils as u
+from mlopt import error as e
 # Import cvxpy and constraint types
 import cvxpy as cp
 import cvxpy.settings as cps

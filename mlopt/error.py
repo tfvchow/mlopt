@@ -1,4 +1,4 @@
-import mlopt.settings as stg
+from mlopt import settings as stg
 
 
 def value_error(err, error_type=ValueError):
