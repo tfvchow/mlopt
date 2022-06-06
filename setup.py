@@ -30,7 +30,6 @@ setup(name='mlopt',
                         "torch",
                         "torchvision",
                         "pytorch-lightning",
-                        "scikit-umfpack"
                         ],
       license='Apache License, Version 2.0',
       )
