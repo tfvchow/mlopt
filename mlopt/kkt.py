@@ -12,7 +12,8 @@ import numpy as np
 #  from pypardiso.pardiso_wrapper import PyPardisoError
 from scipy.sparse.linalg import spsolve
 from scipy.sparse.linalg import factorized
-from scikits.umfpack import UmfpackWarning
+from scipy.sparse.linalg import MatrixRankWarning
+#from scikits.umfpack import UmfpackWarning
 import time
 import warnings
 from mlopt import settings as stg
@@ -27,7 +28,7 @@ class CatchSingularMatrixWarnings(object):
 
     def __enter__(self):
         self.catcher.__enter__()
-        warnings.simplefilter("ignore", UmfpackWarning)
+        warnings.simplefilter("ignore", MatrixRankWarning)
 
         warnings.filterwarnings(
             "ignore",
@@ -131,7 +132,7 @@ class KKTSolver(QpSolver):
 
             t_start = time.time()
             with CatchSingularMatrixWarnings():
-                x = spsolve(KKT, rhs, use_umfpack=True)
+                x = spsolve(KKT, rhs, use_umfpack=False)
             t_end = time.time()
 
         else:
